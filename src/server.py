@@ -8,7 +8,7 @@ import torch
 from fastapi import FastAPI, File, HTTPException, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 
-from model import VGG
+from src.model import VGG
 
 CLASS_NAMES = {0: "flute", 1: "trumpet", 2: "violin", 3: "acoustic guitar", 4: "piano"}
 SUPPORTED_EXTENSIONS = {".wav", ".mp3", ".ogg", ".flac", ".aiff", ".m4a"}
